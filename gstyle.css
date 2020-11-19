@@ -1,17 +1,148 @@
-img{
-    margin-top: 100px;
-    margin-left: 500px;
-    margin-right: 500px;
-    padding-top: 110px;
-    width: 400px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'arial', sans-serif;
 }
-#search{
-    display:flex;
-    margin-left:150px;
-    margin-top:40px;
-    padding-top: 30px;
-    width:1000px;
-    border:auto;
-    
 
+
+#logo{
+    margin-top: 100px;
+}
+
+
+
+
+section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+section header{
+    position: absolute;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section header ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+section header ul li a{
+color:#532;
+font-size: inherit;
+
+}
+
+section header ul li a button{
+    background: lawngreen;
+    border-radius: 40%;
+    border-style: dotted;
+    font-size: 14px;
+}
+
+section .main{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .main .srchBox{
+    position: relative;
+    width: 100%;
+    margin-top:30px;
+}
+
+section .main .srchBox .search
+{
+    width: 100%;
+    padding: 15px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+}
+
+section .main .srchBox .icon
+{
+    position: absolute;
+    top: 0;
+    width:100%;
+    display:flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    
+}
+
+section .main .buttons
+{
+    margin-top: 50px;
+}
+
+section .main .buttons button
+{
+margin: 0 5px;
+padding: 14px 20px;
+color: #610761;
+font-size:20px;
+border:none;
+border-radius: 5px;
+border: 1px solid transparent;
+outline:none;
+
+}
+
+section .main .button button:hover{
+    border: 1px solid green;
+}
+
+.footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    background: silver;
+}
+
+.footer .row
+{
+    padding:15px 30px;
+    border-top: 3px solid rgb(red, green, blue);
+}
+
+.footer .row.row2
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .row.row2 ul{
+    display: flex;
+
+}
+
+.footer .row.row2 ul li{
+    list-style: none;
+}
+
+.footer .row.row2 ul li a
+{
+    text-decoration:none ;
+    font-size: 20px;
+    color: hsl(234,2,1);
+    margin-right: 30px;
 }
